@@ -1,17 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for("static", filename="style.css")}}" />
-    <title>my app</title>
-</head>
-<body>
-    <h1>welcome to my page</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quasi optio. 
-        Reprehenderit porro veritatis voluptatum harum voluptates consequatur aspernatur
-        nemo sunt incidunt repudiandae reiciendis distinctio officia eaque, quos laborum
-         accusamus.
-    </p>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>task smash</title>
+{% endblock %}
+
+{% block body%} 
+    <div class="content">
+            <h1>task smash 2.0</h1>
+            <table>
+                    <tr>
+                        <th>task</th>
+                        <th>added</th>
+                        <th>actions</th>     
+                    </tr>
+                    <tr>
+                        <td>content</td>
+                        <td>data</td>
+                        <td>more</td>
+                    </tr>
+            </table>
+            <form action="">
+                <input type="text" name="content" id="content"f/>
+                <input type="submit" value="Add Task" id="btn_add"/>
+            </form>
+        </div>
+{% endblock %}
