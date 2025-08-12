@@ -1,0 +1,33 @@
+{%extends 'base.html'%}
+
+{%block title%}index{%endblock%}
+
+{%block content%}
+<form action="{{ url_for('index') }}" method="post">
+    <input type="text" name="username" placeholder="username"> <br>
+    <input type="password" name="password" placeholder="password"><br>
+    <input type="submit" value="login"><br>
+</form>
+
+<h1>file_upload</h1>
+<form action="{{ url_for('file_upload')}}" method="post" enctype="multipart/form-data">
+    <input type="file" name="file"
+        accept=".xml,application/xml,text/xml,.txt,text/plain,.xls,.xlsx,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        required="required">
+    <input type="submit" value="upload file">
+</form>
+<h1>file convert_csv</h1>
+<form action="{{ url_for('convert_csv')}}" method="post" enctype="multipart/form-data">
+    <input type="file" name="file"
+        accept=".xml,application/xml,text/xml,.txt,text/plain,.xls,.xlsx,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        required="required">
+    <input type="submit" value="convert file">
+</form>
+<h1>file download page</h1>
+<form action="{{ url_for('convert_csv_two')}}" method="post" enctype="multipart/form-data">
+    <input type="file" name="file"
+        accept=".xml,application/xml,text/xml,.txt,text/plain,.xls,.xlsx,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        required="required">
+    <input type="submit" value="convert file">
+</form>
+{%endblock%}

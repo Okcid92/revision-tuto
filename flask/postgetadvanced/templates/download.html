@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}index{% endblock %}
+
+{% block content %}
+<div class="download-container">
+    <h1>Download Page</h1>
+    <a href="{{ url_for('download', filename=filename) }}">📥 Download</a>
+</div>
+{% endblock %}
