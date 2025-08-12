@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Liste des films{% endblock %}
+
+{% block content %}
+<h1>Liste des films</h1>
+<table>
+    <tr>
+        <th>Titre</th>
+        <th>Auteur</th>
+        <th>Année</th>
+    </tr>
+    {% for film in movies %}
+    <tr {% if film.titre == 'Inception' %}class="highlight"{% endif %}>
+        <td>{{ film.titre }}</td>
+        <td>{{ film.auteur }}</td>
+        <td>{{ film.annee }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
