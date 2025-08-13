@@ -38,5 +38,15 @@ def profileuser(nom, prenom, username):
     return render_template("profile.html", nom=nom, prenom=prenom, username=username)
 
 
+@app.route("/liste", methods= ["GET", "POST"])
+def alluser():
+    conn = connection()
+    mcursor = conn.cursor()
+    mcursor.execute('SELECT * FROM our_user')
+    liste = mcursor.fetchall()
+    mcursor.close()
+    conn.close()
+    return render_template('listofall.html', liste=liste)
+
 if __name__ == '__main__':
     app.run(debug=True)
