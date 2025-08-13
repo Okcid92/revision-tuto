@@ -22,7 +22,7 @@ def ajouter():
     nom = input('entrer le nom: ')
     email = input("entre l'adresse mail: ")
     date_creation = input('entrer la date de creation: ')
-    mycursor.execute('INSERT INTO user (nom, email, date_creation) VALUE (%s, %s, %s);', (nom, email, date_creation))
+    mycursor.execute('INSERT INTO user (nom, email, date_creation) VALUES (%s, %s, %s);', (nom, email, date_creation))
     mydb.commit()
 
 def suprimer():
@@ -34,10 +34,9 @@ def suprimer():
     mycursor.execute('DELETE FROM user WHERE id = %s', (id, ))
     mydb.commit()
 
-def main():
-    print('\n1. afficher\n2. ajouter\n3.supprimer\n4. quitter\n')
+
 while True:
-    main()
+    print('\n1. afficher\n2. ajouter\n3.supprimer\n4. quitter\n')
     choice = int(input("enter your choice here: "))
     match choice:
         case 1:
