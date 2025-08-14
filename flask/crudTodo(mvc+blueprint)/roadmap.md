@@ -1,4 +1,4 @@
-Phase 1 — Préparation & setup
+<!-- Phase 1 — Préparation & setup
 
 Installer l’environnement
 
@@ -12,19 +12,19 @@ Crée l’arborescence projet avec app/, templates/, static/, models/, routes/.
 
 Prépare les fichiers config.py, db.py, db.yaml.
 
-Init Git
+<!-- Init Git
 
 Nouvelle branche flask-todo.
 
 Faire ton premier commit “project skeleton”.
 
-Phase 2 — Configuration
+Phase 2 — Configuration 
 
 Configurer la BDD
 
 Remplis db.yaml avec host, user, password, db.
 
-Vérifie que db.py peut établir une connexion.
+Vérifie que db.py peut établir une connexion. -->
 
 Configurer Flask
 
