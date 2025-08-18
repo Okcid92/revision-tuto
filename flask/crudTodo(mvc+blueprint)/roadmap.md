@@ -1,3 +1,4 @@
+-- Active: 1753556517286@@127.0.0.1@3306@crudtodo
 <!-- Phase 1 — Préparation & setup
 
 Installer l’environnement
@@ -36,13 +37,13 @@ Phase 3 — Modèle (MVC)
 
 Créer le modèle Todo
 
-Liste les champs : id, titre, description, status, date de création. -->
+Liste les champs : id, titre, description, status, date de création. 
 
 Prévois des méthodes pour CRUD (insert, select, update, delete).
 
 Test de modèle
 
-Vérifie que tu peux te connecter à la BDD et récupérer/ajouter des données.
+Vérifie que tu peux te connecter à la BDD et récupérer/ajouter des données. 
 
 Phase 4 — Routes & Blueprints
 
@@ -52,13 +53,13 @@ Organiser toutes les routes CRUD sous /todos.
 
 Planifier les routes
 
-Liste de todos
+Ajouter un todo 
 
-Ajouter un todo
+Liste de todos
 
 Modifier un todo
 
-Supprimer un todo
+Supprimer un todo -->
 
 Tester les routes
 
