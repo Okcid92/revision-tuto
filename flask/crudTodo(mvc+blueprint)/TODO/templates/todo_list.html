@@ -1,0 +1,31 @@
+{%extends 'base.html'%}
+
+{%block title%} page d'acceuil {%endblock%}
+
+{%block body%}
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">title</th>
+      <th scope="col">content</th>
+      <th scope="col">status</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%for todo in todos%}
+    <tr>
+      <td>{{todo.id}}</td>
+      <td>{{todo.title}}</td>
+      <td>{{todo.content}}</td>
+      <td>{{'done' if todo.status else 'pending'}}</td>
+    </tr>
+    {%endfor%}
+  </tbody>
+</table>
+
+<a class="btn btn-primary" href="{{ url_for('action.create') }}" role="button">ADD</a>
+<a class="btn btn-primary" href="{{ url_for('action.remove') }}" role="button">REMOVE</a>
+<a class="btn btn-primary" href="{{ url_for('action.edit') }}" role="button">EDIT</a>
+{%endblock%}
