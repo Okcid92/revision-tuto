@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+
+{%block title%}ajouter{%endblock%}
+
+{%block body%}
+
+<form action="/todos/create" method="post">
+    <input type="text" name="title" placeholder="title">
+    <input type="text" name="content" placeholder="content">
+    <select name="status">
+        <option value="True">done</option>
+        <option value="False">not done</option>
+    </select>
+    <input type="submit" value="ADD">
+</form>
+
+{%endblock%}

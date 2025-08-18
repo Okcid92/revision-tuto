@@ -1,6 +1,7 @@
 from flask import Flask
-import config
+from app import config
 import mysql.connector
+
 
 dbc = Flask(__name__)
 dbc.config.from_object(config)
