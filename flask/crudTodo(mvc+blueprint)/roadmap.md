@@ -24,7 +24,7 @@ Configurer la BDD
 
 Remplis db.yaml avec host, user, password, db.
 
-Vérifie que db.py peut établir une connexion. -->
+Vérifie que db.py peut établir une connexion. 
 
 Configurer Flask
 
@@ -36,7 +36,7 @@ Phase 3 — Modèle (MVC)
 
 Créer le modèle Todo
 
-Liste les champs : id, titre, description, status, date de création.
+Liste les champs : id, titre, description, status, date de création. -->
 
 Prévois des méthodes pour CRUD (insert, select, update, delete).
 

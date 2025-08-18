@@ -1,9 +1,9 @@
 from flask import Flask
 import config
 import mysql.connector
-app = Flask(__name__)
 
-app.config.from_object(config)
+dbc = Flask(__name__)
+dbc.config.from_object(config)
 
 def connectdb():
     return mysql.connector.connect(
